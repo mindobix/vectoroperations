@@ -1,0 +1,15 @@
+# Compiled object files
+*.o
+
+# Executable
+vector_operations
+
+# IDE-specific files (optional)
+.vscode/
+.idea/
+
+# Build output directory (optional)
+build/
+
+# Text editor temporary files (optional)
+*~

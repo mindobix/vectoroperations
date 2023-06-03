@@ -1,3 +1,12 @@
 {
-  "files": {}
+  "files": {
+    "vectors.c": [
+      {
+        "id": "33400efc-1b37-4f7b-a0e3-67b0224495d1",
+        "line": 1,
+        "version": 1167,
+        "index": 0
+      }
+    ]
+  }
 }
