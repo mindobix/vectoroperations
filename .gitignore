@@ -6,6 +6,8 @@
 *.breakpoints
 .breakpoints
 .replit
+main
+main-debug
 
 # Executable
 vector_operations
