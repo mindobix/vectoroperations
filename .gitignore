@@ -7,6 +7,7 @@ vector_operations
 # IDE-specific files (optional)
 .vscode/
 .idea/
+.ccls-cache/
 
 # Build output directory (optional)
 build/
