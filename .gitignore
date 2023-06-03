@@ -4,6 +4,8 @@
 *.replit
 *.nix
 *.breakpoints
+.breakpoints
+.replit
 
 # Executable
 vector_operations
