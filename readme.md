@@ -1,6 +1,6 @@
 # Vector Operations by chatGPT
 
-The `vector_operations` project is a C program that provides functions for performing vector operations, including addition, subtraction, multiplication, and division. It includes unit tests to ensure the correctness of the vector operations and allows user input for vector calculations.
+The `vector_operations` project is a C program that provides functions for performing vector operations, including addition, subtraction, multiplication, and division. It includes unit tests to ensure the correctness of the vector operations and allows user input for vector calculations. 
 
 ## Prerequisites
 
