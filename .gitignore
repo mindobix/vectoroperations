@@ -1,8 +1,9 @@
 # Compiled object files
 *.o
 
-.replit
-replit.nix
+*.replit
+*.nix
+*.breakpoints
 
 # Executable
 vector_operations
