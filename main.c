@@ -15,7 +15,7 @@ void testVectorAddition() {
   assert(result.elements[0] == 4);
   assert(result.elements[1] == 6);
 
-  printf("testVectorAddition > Test case 1: [1,2] + [3,4] = [4,6] --> passed\n");
+  printf("testVectorAddition > Test case 1: [1,2]+[3,4] = [4,6] --> passed\n");
 
   freeVector(&result);
 
@@ -30,7 +30,7 @@ void testVectorAddition() {
   assert(result.elements[1] == 10);
   assert(result.elements[2] == 15);
 
-  printf("testVectorAddition > Test case 2: [0,0,0] + [5,10,15] = [5,10,15] --> passed\n");
+  printf("testVectorAddition > Test case 2: [0,0,0]+[5,10,15] = [5,10,15] --> passed\n");
 
   freeVector(&result);
 
@@ -49,7 +49,7 @@ assert(result.elements[1] == -2);
 
 freeVector(&result);
 
-printf("testVectorSubtraction > Test case 1: [1,2] - [3,4] = [-2,-2] --> passed\n");
+printf("testVectorSubtraction > Test case 1: [1,2]-[3,4] = [-2,-2] --> passed\n");
 
 // Test case 2: [5, 10, 15] - [1, 2, 3] = [4, 8, 12]
 vector1 = (Vector){ .elements = (double[]){5, 10, 15}, .size = 3 };
@@ -64,7 +64,7 @@ assert(result.elements[2] == 12);
 
 freeVector(&result);
 
-  printf("testVectorSubtraction > Test case 2: [5,10,15] - [1,2,3] = [4,8,12] --> passed\n");
+  printf("testVectorSubtraction > Test case 2: [5,10,15]-[1,2,3] = [4,8,12] --> passed\n");
   
 }
 
