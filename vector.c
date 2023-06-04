@@ -15,13 +15,15 @@ Vector parseVector(const char* vectorString) {
 
     char* token;
     char* vectorCopy = strdup(vectorString);
-
+    printf("vectorCopy = %s\n", vectorCopy);
     token = strtok(vectorCopy, "[,]");
+    printf("token = %s\n", token);
     while (token != NULL) {
-        vector.elements = realloc(vector.elements, (vector.size + 1) * sizeof(double));
-        vector.elements[vector.size] = atof(token);
-        vector.size++;
-        token = strtok(NULL, "[,]");
+      vector.elements = realloc(vector.elements, (vector.size + 1) * sizeof(double));
+      vector.elements[vector.size] = atof(token);
+      vector.size++;
+      token = strtok(NULL, "[,]");
+      printf("token = %s\n", token);
     }
 
     free(vectorCopy);
@@ -82,7 +84,8 @@ Vector vectorDivision(const Vector* vector1, const Vector* vector2) {
         if (vector2->elements[i] != 0) {
             result.elements[i] = vector1->elements[i] / vector2->elements[i];
         } else {
-            printf("Error: Division by zero\n");
+            printf("vectorDivision > Error: Division by zero\n");
+           result.elements[i] = 0.0;
         }
     }
 
