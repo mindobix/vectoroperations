@@ -61,6 +61,14 @@ To run the program with user input, use the following command:
 
 Follow the prompts to enter the vectors in the specified format and press Enter. The program will perform the corresponding vector operation and display the result.
 
+## Run Unit Tests and Vector Operations App
+
+make run
+
+If you want to run the unit tests by itself then execute the following command:
+
+./test_vector_operations
+
 ## Cleaning Up
 
 To clean up the compiled files, run the following command:

@@ -15,12 +15,16 @@ Vector parseVector(const char* vectorString) {
 
     char* token;
     char* vectorCopy = strdup(vectorString);
+
     token = strtok(vectorCopy, "[,]");
     while (token != NULL) {
-      vector.elements = realloc(vector.elements, (vector.size + 1) * sizeof(double));
-      vector.elements[vector.size] = atof(token);
-      vector.size++;
-      token = strtok(NULL, "[,]");
+        double element;
+        if (sscanf(token, "%lf", &element) == 1) {
+            vector.elements = realloc(vector.elements, (vector.size + 1) * sizeof(double));
+            vector.elements[vector.size] = element;
+            vector.size++;
+        }
+        token = strtok(NULL, "[,]");
     }
 
     free(vectorCopy);
@@ -100,6 +104,24 @@ void printVector(const Vector* vector) {
         }
     }
     printf("]\n");
+}
+
+int operationPos(const char* expression) {
+    int len = strlen(expression);
+    int operatorPos = -1;
+    int bracketCount = 0;
+
+    for (int i = 0; i < len; i++) {
+        if (expression[i] == '[') {
+            bracketCount++;
+        } else if (expression[i] == ']') {
+            bracketCount--;
+        } else if ((expression[i] == '+' || expression[i] == '-' || expression[i] == '*' || expression[i] == '/') && bracketCount == 0) {
+            return i;
+        }
+    }
+
+    return -1;  // No operator found
 }
 
 // Function to free memory allocated for the vector

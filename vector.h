@@ -13,5 +13,6 @@ Vector vectorMultiplication(const Vector* vector1, const Vector* vector2);
 Vector vectorDivision(const Vector* vector1, const Vector* vector2);
 void printVector(const Vector* vector);
 void freeVector(Vector* vector);
+int operationPos(const char* expression);
 
 #endif /* VECTOR_H */

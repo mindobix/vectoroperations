@@ -11,6 +11,7 @@ main-debug
 
 # Executable
 vector_operations
+test_vector_operations
 
 # IDE-specific files (optional)
 .vscode/
