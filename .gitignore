@@ -4,6 +4,7 @@
 *.replit
 *.nix
 *.breakpoints
+*.dSYM
 .breakpoints
 .replit
 main
