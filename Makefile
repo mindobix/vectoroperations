@@ -29,7 +29,7 @@ $(TARGET)-debug: $(SRCS) $(HEADERS)
 	$(CC) $(CFLAGS) -O0 $(SRCS) -o "$@" 
 
 $(TEST_TARGET): $(TEST_SRCS) $(TEST_HEADERS)
-	$(CC) $(CFLAGS) $(TEST_SRCS) -o "$@" ./test_vector_operations
+	$(CC) $(CFLAGS) $(TEST_SRCS) -o "$@"
 
 clean:
 	rm -f $(TARGET) $(TARGET).o vector.o $(TARGET)-debug $(TEST_TARGET) $(TEST_TARGET).o
